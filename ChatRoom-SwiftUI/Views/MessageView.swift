@@ -24,16 +24,22 @@ struct MessageView: View {
                 .background(.blue)
                 .cornerRadius(20)
                 
-                Image(systemName: "person")
-                    .frame(maxHeight: 32, alignment: .top)
+                Image("person1")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(maxWidth: 32, maxHeight: 32, alignment: .top)
+                    .cornerRadius(16)
                     .padding(.bottom, 12)
                     .padding(.leading, 4)
             }
             .frame(maxWidth: 360, alignment: .trailing)
         } else {
             HStack {
-                Image(systemName: "person")
-                    .frame(maxHeight: 32, alignment: .top)
+                Image("person2")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(maxWidth: 32, maxHeight: 32, alignment: .top)
+                    .cornerRadius(16)
                     .padding(.bottom, 12)
                     .padding(.trailing, 4)
                 

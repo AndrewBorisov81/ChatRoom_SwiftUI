@@ -17,7 +17,7 @@ struct Message: Decodable, Identifiable {
     }
     
     func isFromCurrentUser() -> Bool {
-        return true
+        return false
     }
 }
 
